@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+.heading{
+    background-color: lightskyblue;
+    width: 30vw;
+    text-align: center ;
+    color: linen;
+    border: white solid 10px;
+    border-radius: 2px;
+  
+}
+.main_container{
+    padding-left: 10px;
+    padding-top: 5px;
+
+}
+.nav_bar{
+    height: 10vh;
+    width:90vw;
+    border: lightskyblue dashed;
+    border-radius: 5px;
+    background-color: linen;
+    display: flex;
+}
+.ticket_container{
+    background-color: lightskyblue;
+    height: 80vh;
+    width: 90vw;
+    border:linen solid 5px;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 10px 10px 10px;
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    overflow-y: auto;
+    
+}
+.filter_container,
+.add_delete_container{
+    height: 5vh;
+    margin-top: 2.5vh;
+    background-color: lightskyblue;
+    border-radius: 3px;
+}
+.filter_container{
+    width: 20vw;
+    display: flex;
+}
+.add_delete_container{
+    width: 10vw;
+    display : flex
+}
+.add,
+.delete{
+    height: 100%;
+    width:50%;
+    padding: 0vh 1vh 1vh 1vh;  
+    color: linen;
+    border: linen dashed;
+    text-align: center;
+    
+} 
+.material-icons.action_btn{
+    width: 3vw;
+    text-align: center;
+   
+} 
+.filter{
+    height:100%;
+    width:25%;
+}
+.red_clr_btn,
+.green_clr_btn,
+.yellow_clr_btn,
+.pink_clr_btn{
+    display: block;
+    height: 50%;
+    width: 30%;
+    margin-top: calc(0.25*5vh);
+    border-radius: 2px;
+}
+.red_clr_btn, .red_filter, .ticket_colour_red{
+    background-color: red;
+}
+.green_clr_btn, .green_filter, .ticket_colour_green{
+    background-color: green;
+}
+.yellow_clr_btn, .yellow_filter, .ticket_colour_yellow{
+    background-color: yellow;
+}
+.pink_clr_btn, .pink_filter, .ticket_colour_pink{
+    background-color: pink;
+}
+.filter:hover{
+    background-color:grey ;
+    cursor:pointer;
+}
+.filter.active{
+    background-color: grey;
+}
+.add:hover{
+    background-color:grey ;
+    cursor:pointer;
+   
+}
+.delete:hover{
+    background-color:grey ;
+    cursor:pointer;
+   
+}
+.modal{
+    height:15rem ;
+    width: 30rem;
+    background-color: linen;
+    border: lightskyblue solid 10px;
+    border-radius: 5px;
+    display:flex;
+    padding: 1vh 1vh 1vh 1vh ;
+    position: absolute;
+    top: 7rem;
+    left: 21rem;
+    box-shadow: 5px 5px 40px 5px grey;
+}
+.text_container{
+    height:85%;
+    width:70%;
+    background-color: lightskyblue;
+    padding: 1rem;
+    outline: none;
+    overflow: auto;
+}
+.priority_container{
+    height: 85%;
+    width: 20% ;
+    border: lightskyblue dashed;  
+    display: flex ;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.modal_filter{
+    height: 20% ;
+    width: 40% ;
+    /* align-items: center;
+    margin-top: 0.4rem; */
+}
+.modal_filter:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.modal_filter.active{
+    border: 5px dashed ; 
+}
+.ticket{
+    height: 10rem;
+    width: 8rem ;
+    outline: floralwhite solid;
+    background-color: linen;
+    padding:0rem 1rem 0.5rem 1rem ;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+.ticket_colour{
+    height: 1rem;
+    width: 6rem ;
+    margin-bottom: 0.5rem;
+}
+.ticket_id{
+    height: 1rem;
+    width: 6rem ;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: small;
+    font-weight: bold;
+    color: grey;
+}
+.task{
+    height: 6em;
+    width:6rem;
+    font-size: small;
+    text-align: center;
+}
+.ticket.active{
+    box-shadow: 0px 0px 5px 3px;
+}
